@@ -1,0 +1,32 @@
+body{
+  font-family: 'Roboto', sans-serif
+}
+
+.taskBox{
+  display:flex;
+  gap:10px;
+  width:500px;
+  background-color:blanchedalmond;
+  padding:10px;
+  border-radius:20px;
+}
+
+.taskDescription{
+  word-wrap:break-word;
+  width:400px;
+}
+
+.checkBox{
+  border-radius:5px;
+  display:flex;
+  justify-content: center;
+  cursor:pointer;
+  width:20px;
+  margin-left:5px;
+  border:1px solid;
+}
+
+.boxHovered{
+  box-shadow:0px 0px 5px lightslategray;
+}
+
