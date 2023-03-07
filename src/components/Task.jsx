@@ -9,41 +9,27 @@ import './App.css'
 */
 const Task = (props) => {
   
-  const [task, setTask] = useState('hello')
+  const [task, setTask] = useState('')
   const [check, setCheck] = useState(false)
   const [hovered, setHovered] = useState(false)
 
-  const handleHover = (e) => {
-    setHovered(true)
-    console.log(e.target)
-  }
-
-  const handleLeave = (e) => {
-    setHovered(false)
-    console.log(e.target)
-  }
-
-  const handleTaskClick = () => {
-    console.log()
-  }
 
   const checkClick = () => {
     setCheck(!check)
   }
-  
-  const handleSubmit = () => {
-    console.log()
+
+  const handleTaskChange = (e) => {
+    setTask(e.target.value)
+    console.log(task)
   }
+  
 
   return(
     <div>
-      <div className={hovered ? 'boxHovered taskBox': 'taskBox'} onClick={handleTaskClick} onMouseEnter={handleHover} onMouseLeave={handleLeave}>
-        <div className="checkBox" onClick={checkClick}>{check && <img src={checkmark} width="15px"/>}</div>
-        <div className="taskDescription">{task}</div>
+      <div className={hovered ? 'boxHovered taskBox': 'taskBox'} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+        <div className={check ? 'green checkBox' : 'checkBox'} onClick={checkClick}></div>
+        <input className="taskDescription" value={task} onChange={handleTaskChange}></input>
       </div>
-
-    <form className="taskForm" onSubmit={handleSubmit}>
-    </form>
     </div>
   )
 }

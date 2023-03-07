@@ -1,5 +1,11 @@
 A to do list, utilizing React forms and React.
 
+03/07/23: First Commit
+Created the initial layout and design, task components with checkboxes. Next step is to add the tasks to local storage so it gets saved per use.
+After that, add a time method that automatically checks to see if the task time has passed without being checked. 
+
+
+
 Step 1: Create the list with forms on each line to add a new task. Default number of 10 tasks, but user can add more tasks and delete tasks if they want. Add a checkbox that fills in an image of a checkmark if completed. Maybe add an optional timer to each task so that if the system sees the time has passed and the task hasn't been checked, it gets marked as not completed. Stored in local storage so system can keep track of items.
 
 Step 2: Create a calendar based method that lets user store a to-do list in everyday, keeping track of their items over time

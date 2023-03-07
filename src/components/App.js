@@ -1,11 +1,11 @@
 
 import './App.css';
-import Task from './Task.jsx'
+import List from './List';
 
 function App() {
   return (
     <div className="App">
-      <Task />
+      <List />
     </div>
   );
 }

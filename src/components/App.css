@@ -1,32 +1,58 @@
+
 body{
-  font-family: 'Roboto', sans-serif
+  font-family: 'Roboto', sans-serif;
+  background-color: lightslategray;
 }
+
+/* TASK.JSX */ 
 
 .taskBox{
   display:flex;
   gap:10px;
-  width:500px;
+  width:1100px;
   background-color:blanchedalmond;
   padding:10px;
   border-radius:20px;
 }
 
 .taskDescription{
-  word-wrap:break-word;
-  width:400px;
+  font-size: 30px;
+  width: 1050px;
+  background-color: blanchedalmond;
+  border: 0px;
 }
 
+.green{
+  background-color: green;
+}
 .checkBox{
   border-radius:5px;
   display:flex;
   justify-content: center;
   cursor:pointer;
-  width:20px;
+  width:30px;
+  height:30px;
   margin-left:5px;
-  border:1px solid;
+  border:2px solid;
+  box-shadow: 1px 1px 1px black;
 }
 
 .boxHovered{
   box-shadow:0px 0px 5px lightslategray;
 }
 
+/* LIST.JSX */
+
+.header{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #FAF9F6;
+}
+
+.taskList{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap:5px;
+}
